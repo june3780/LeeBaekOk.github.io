@@ -1,0 +1,10 @@
+# _config.yml
+title: "안선생님의 블로그"
+description: "GFM 마크다운 블로그"
+theme: minima
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+future: true
