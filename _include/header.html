@@ -1,16 +1,10 @@
-<header class="site-header" role="banner">
+<header class="site-header">
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-    {% if site.pages %}
-      <nav class="site-nav">
-        {% for page in site.pages %}
-          {% if page.nav == true %}
-            <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </nav>
-    {% endif %}
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ "/" | relative_url }}">홈</a>
+      <a href="{{ "/tags" | relative_url }}">태그</a>
+      <a href="{{ "/about" | relative_url }}">소개</a>
+    </nav>
   </div>
 </header>
-
