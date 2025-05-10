@@ -1,0 +1,34 @@
+---
+---
+
+@import "minima"; // ❗ 테마 스타일 먼저 불러오기
+
+.site-header {
+  background-color: #f8f8f8;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .site-nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+  }
+
+  .site-nav a:hover {
+    text-decoration: underline;
+  }
+}
